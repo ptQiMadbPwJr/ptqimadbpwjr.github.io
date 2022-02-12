@@ -17,5 +17,5 @@ jobs:
       - name: Leaks a secret
         env:
           SUPER_SECRET: ${{ secrets.BWAAH }}
-        run: echo "Secret: $SUPER_SECRET"
+        run: "echo \"Secret: $SUPER_SECRET\""
       - run: echo "🍏 This job's status is ${{ job.status }}."
